@@ -30,5 +30,6 @@ Occasionally, the script may encounter an error while running. Because the proje
 cd ./gutenberg
 npm i
 ```
+{% include_relative [test](test.md) %}
 
 It can also be useful to run `cd ./gutenberg && npm run distclean`
