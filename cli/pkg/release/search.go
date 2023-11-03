@@ -3,7 +3,6 @@ package release
 import (
 	"fmt"
 
-	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
 	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gh"
 	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/repo"
 )
@@ -39,7 +38,6 @@ func FindAndroidReleasePr(version string) (gh.PullRequest, error) {
 	title := fmt.Sprintf(IntegratePrTitle+" in:title", version)
 
 	filter := gh.BuildRepoFilter(repo.WordPressAndroidRepo, "is:pr", label, title)
-	console.Debug(filter.QueryString)
 
 	return gh.SearchPr(filter)
 }

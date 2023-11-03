@@ -2,6 +2,7 @@ package prepare
 
 import (
 	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gh"
 	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/release"
 	"github.com/spf13/cobra"
 )
@@ -12,11 +13,27 @@ var gbCmd = &cobra.Command{
 	Long:  `Use this command to prepare a Gutenberg release PR`,
 	Run: func(cc *cobra.Command, args []string) {
 		preflight(args)
+
 		defer workspace.Cleanup()
+		build := release.Build{
+			Dir:     tempDir,
+			Version: version,
+			UseTag:  !noTag,
+			Repo:    "gutenberg",
+			Base: gh.Repo{
+				Ref: "trunk",
+			},
+		}
+
+		if version.IsPatchRelease() {
+			console.Info("Preparing a patch release")
+			tagName := "rnmobile/" + version.PriorVersion().String()
+			setupPatchBuild(tagName, &build)
+		}
 
 		console.Info("Preparing Gutenberg for release %s", version)
 
-		pr, err := release.CreateGbPR(version, tempDir, noTag)
+		pr, err := release.CreateGbPR(build)
 		exitIfError(err, 1)
 
 		console.Info("Created PR %s", pr.Url)
