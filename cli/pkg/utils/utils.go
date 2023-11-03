@@ -12,7 +12,7 @@ func SetupNode(dir string) error {
 
 	// Check for nvm
 	if os.Getenv("NVM_DIR") != "" {
-		cmd = exec.Command("bash", "-l", "-c", ". $NVM_DIR/nvm.sh && nvm use")
+		cmd = exec.Command("bash", "-l", "-c", ". $NVM_DIR/nvm.sh && nvm install && nvm use")
 		cmd.Path = "/bin/bash"
 	}
 
