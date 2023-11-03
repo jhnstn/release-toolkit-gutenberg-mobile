@@ -3,11 +3,11 @@ package prepare
 import (
 	"errors"
 
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/utils"
+	wp "github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/workspace"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gbm"
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/gbm-cli/cmd/utils"
-	wp "github.com/wordpress-mobile/gbm-cli/cmd/workspace"
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/gbm"
 )
 
 var exitIfError func(error, int)

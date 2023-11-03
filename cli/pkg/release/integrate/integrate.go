@@ -4,12 +4,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/gh"
-	"github.com/wordpress-mobile/gbm-cli/pkg/release"
-	"github.com/wordpress-mobile/gbm-cli/pkg/render"
-	"github.com/wordpress-mobile/gbm-cli/pkg/repo"
-	"github.com/wordpress-mobile/gbm-cli/pkg/shell"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/release"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/render"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/repo"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/shell"
 )
 
 type Integration interface {

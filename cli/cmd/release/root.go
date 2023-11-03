@@ -1,9 +1,9 @@
 package release
 
 import (
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/release/prepare"
+	wp "github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/workspace"
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/gbm-cli/cmd/release/prepare"
-	wp "github.com/wordpress-mobile/gbm-cli/cmd/workspace"
 )
 
 var exitIfError func(error, int)

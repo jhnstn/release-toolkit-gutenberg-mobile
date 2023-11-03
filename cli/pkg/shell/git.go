@@ -3,7 +3,7 @@ package shell
 import (
 	"fmt"
 
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
 )
 
 type GitCmds interface {

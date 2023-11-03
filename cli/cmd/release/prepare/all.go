@@ -4,10 +4,10 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/release"
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/gh"
-	"github.com/wordpress-mobile/gbm-cli/pkg/release"
 )
 
 var allCmd = &cobra.Command{

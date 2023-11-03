@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/gbm"
-	"github.com/wordpress-mobile/gbm-cli/pkg/render"
-	"github.com/wordpress-mobile/gbm-cli/pkg/semver"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gbm"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/render"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/semver"
 )
 
 var version string

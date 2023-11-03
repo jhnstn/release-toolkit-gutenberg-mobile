@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gh"
 )
 
 type ReleaseChanges struct {

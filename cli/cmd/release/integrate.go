@@ -6,13 +6,13 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/utils"
+	wp "github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/workspace"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/release"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/release/integrate"
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/gbm-cli/cmd/utils"
-	wp "github.com/wordpress-mobile/gbm-cli/cmd/workspace"
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/gh"
-	"github.com/wordpress-mobile/gbm-cli/pkg/release"
-	"github.com/wordpress-mobile/gbm-cli/pkg/release/integrate"
 )
 
 var android, ios, both bool

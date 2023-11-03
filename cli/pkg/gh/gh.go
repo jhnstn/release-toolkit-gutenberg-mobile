@@ -10,9 +10,9 @@ import (
 
 	"github.com/cli/go-gh/v2/pkg/api"
 	"github.com/fatih/color"
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/gbm-cli/pkg/repo"
-	"github.com/wordpress-mobile/gbm-cli/pkg/shell"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/repo"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/shell"
 )
 
 // Branch represents a GitHub branch API schema.

@@ -1,8 +1,8 @@
 package render
 
 import (
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/gbm-cli/pkg/console"
 )
 
 var AztecCmd = &cobra.Command{

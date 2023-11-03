@@ -3,8 +3,8 @@ package render
 import (
 	"os"
 
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/cmd/utils"
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/gbm-cli/cmd/utils"
 )
 
 var writeToClipboard bool
