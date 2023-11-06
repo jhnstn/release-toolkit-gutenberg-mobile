@@ -1,5 +1,7 @@
 package shell
 
+import "github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
+
 type NpmCmds interface {
 	Install(...string) error
 	Ci() error
@@ -14,6 +16,7 @@ func (c *client) Ci() error {
 }
 
 func (c *client) Run(args ...string) error {
+	console.Debug("Running npm command: %v", args)
 	c.cmd("node -v")
 	c.cmd("which node")
 	run := append([]string{"run"}, args...)

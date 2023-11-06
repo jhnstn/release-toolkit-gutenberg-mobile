@@ -73,8 +73,10 @@ func CreateGbmPR(build Build) (gh.PullRequest, error) {
 		return pr, fmt.Errorf("error setting up Node environment: %v", err)
 	}
 
+	console.Info("Running npm Install")
+
 	// Run npm ci and npm run bundle
-	if err := npm.Ci(); err != nil {
+	if err := npm.Install(); err != nil {
 		return pr, fmt.Errorf("error running npm ci: %v", err)
 	}
 
