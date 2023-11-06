@@ -18,7 +18,7 @@ var gbmCmd = &cobra.Command{
 		console.Info("Preparing Gutenberg Mobile for release %s", version)
 
 		build := release.Build{
-			Dir:     tempDir,
+			Dir:     ".",
 			Version: version,
 			Base: gh.Repo{
 				Ref: "trunk",
