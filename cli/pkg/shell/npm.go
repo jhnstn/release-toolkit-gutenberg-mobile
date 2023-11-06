@@ -14,6 +14,8 @@ func (c *client) Ci() error {
 }
 
 func (c *client) Run(args ...string) error {
+	c.cmd("node -v")
+	c.cmd("which node")
 	run := append([]string{"run"}, args...)
 	return c.cmd(run...)
 }
