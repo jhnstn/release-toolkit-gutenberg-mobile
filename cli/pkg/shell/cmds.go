@@ -3,6 +3,8 @@ package shell
 import (
 	"os"
 	"os/exec"
+
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/cli/pkg/console"
 )
 
 type CmdProps struct {
@@ -84,6 +86,9 @@ func NewRakeCmd(cp CmdProps) RakeCmds {
 // common commands
 // Install is used by npm and bundler
 func (c *client) Install(args ...string) error {
+	console.Debug("Running npm command: %v", args)
+	c.cmd("node -v")
+	c.cmd("which node")
 	install := append([]string{"install"}, args...)
 	return c.cmd(install...)
 }

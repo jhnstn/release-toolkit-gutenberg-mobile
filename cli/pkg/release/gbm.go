@@ -76,7 +76,7 @@ func CreateGbmPR(build Build) (gh.PullRequest, error) {
 	console.Info("Running npm Install")
 
 	// Run npm ci and npm run bundle
-	if err := npm.Install(); err != nil {
+	if err := npm.Install("--loglevel verbose"); err != nil {
 		return pr, fmt.Errorf("error running npm ci: %v", err)
 	}
 
