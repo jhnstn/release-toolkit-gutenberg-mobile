@@ -33,6 +33,14 @@ func (c *client) Ci() error {
 }
 
 func (c *client) Run(args ...string) error {
+	if os.Getenv("NVM_DIR") != "" {
+		run := append([]string{"-l", "-c","nvm use && npm run "}, args...)
+		cmd := exec.Command("bash", run...)
+		cmd.Dir = c.dir
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		return cmd.Run()
+	}
 	run := append([]string{"run"}, args...)
 	return c.cmd(run...)
 }
