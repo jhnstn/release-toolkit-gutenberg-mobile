@@ -41,7 +41,7 @@ func CreateGbmPR(build Build) (gh.PullRequest, error) {
 		console.Info("Branch %s already exists", branch)
 		return pr, nil
 	} else {
-		console.Info("Cloning Gutenberg Mobile to %s", dir)
+		console.Info("Cloning Gutenberg Mobile from %s to %s", org, dir)
 		err := git.Clone(repo.GetRepoPath("gutenberg-mobile"), "--depth=1", "--recursive", ".")
 		if err != nil {
 			return pr, fmt.Errorf("error cloning the Gutenberg Mobile repository: %v", err)
