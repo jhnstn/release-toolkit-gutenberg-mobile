@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gbm"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/render"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/semver"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gbm"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/render"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/semver"
 )
 
 var version string
@@ -60,7 +60,7 @@ var ChecklistCmd = &cobra.Command{
 			releaseDate = nextReleaseDate()
 		}
 
-		releaseUrl := fmt.Sprintf("https://github.com/wordpress-mobile/gutenberg-mobile/releases/new?tag=v%s&target=release/%s&title=Release+%s", version, version, version)
+		releaseUrl := fmt.Sprintf("https://github.com/jhnstn/gutenberg-mobile/releases/new?tag=v%s&target=release/%s&title=Release+%s", version, version, version)
 
 		t := render.Template{
 			Path:  "templates/checklist/checklist.html",

@@ -2,9 +2,9 @@ package prepare
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/release"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/release"
 )
 
 var gbCmd = &cobra.Command{

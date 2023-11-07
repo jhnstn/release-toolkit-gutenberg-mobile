@@ -4,7 +4,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
 )
 
 func SetupNode(dir string) error {

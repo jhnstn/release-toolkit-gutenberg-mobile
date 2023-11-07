@@ -3,10 +3,10 @@
 This directory contains the available CLI subcommands and utilities, organized in the [recommended command structure](https://github.com/spf13/cobra/blob/main/site/content/user_guide.md#organizing-subcommands) from `cobra`.
 
 ### Commands
-- [`render`](https://github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/blob/trunk/cli/cmd/render/README.md)
+- [`render`](https://github.com/jhnstn/release-toolkit-gutenberg-mobile/blob/trunk/cli/cmd/render/README.md)
 Renders the Release Checklist.
 
-- [`release`](https://github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/tree/cli/command-docs/cli/cmd/release)
+- [`release`](https://github.com/jhnstn/release-toolkit-gutenberg-mobile/tree/cli/command-docs/cli/cmd/release)
 Parent command for subcommands used for the release flow.
 
 - `utils`

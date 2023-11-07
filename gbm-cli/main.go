@@ -6,8 +6,8 @@ package main
 import (
 	"embed"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/cmd"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/render"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/cmd"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/render"
 )
 
 //go:embed templates/*

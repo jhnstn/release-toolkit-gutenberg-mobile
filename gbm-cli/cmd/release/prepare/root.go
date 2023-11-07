@@ -4,13 +4,13 @@ import (
 	"errors"
 
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/cmd/utils"
-	wp "github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/cmd/workspace"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gbm"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/release"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/semver"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/cmd/utils"
+	wp "github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/cmd/workspace"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gbm"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/release"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/semver"
 )
 
 var exitIfError func(error, int)

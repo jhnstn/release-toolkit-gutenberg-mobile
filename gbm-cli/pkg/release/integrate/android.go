@@ -7,13 +7,13 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gbm"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/release"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gbm"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/release"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/repo"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/shell"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/repo"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/shell"
 )
 
 type AndroidIntegration struct {

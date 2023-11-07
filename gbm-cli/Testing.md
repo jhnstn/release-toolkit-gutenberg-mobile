@@ -6,10 +6,10 @@ If developing with VSCode, tests can be run inline within the test files themsel
 The CLI tool can be run against forked repos for testing. To configure your forked repos:
 
  1. Fork the following repos to your github user repo:
-    - [Gutenberg-Mobile](https://github.com/wordpress-mobile/gutenberg-mobile)    
+    - [Gutenberg-Mobile](https://github.com/jhnstn/gutenberg-mobile)
     - [Gutenberg](https://github.com/WordPress/gutenberg)
-    - [WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)
-    - [WordPress-iOS](https://github.com/wordpress-mobile/WordPress-iOS)
+    - [WordPress-Android](https://github.com/jhnstn/WordPress-Android)
+    - [WordPress-iOS](https://github.com/jhnstn/WordPress-iOS)
 
 3. Ensure that your forked repos contains the PR labels specified below:
     a) Gutenberg Mobile: "release-process"
@@ -17,7 +17,7 @@ The CLI tool can be run against forked repos for testing. To configure your fork
 
 4. Ensure that each of your repos contains the target branch `trunk`.
 
-5. Ensure that [.gitmodules](https://github.com/wordpress-mobile/gutenberg-mobile/blob/trunk/.gitmodules) references your Gutenberg fork.
+5. Ensure that [.gitmodules](https://github.com/jhnstn/gutenberg-mobile/blob/trunk/.gitmodules) references your Gutenberg fork.
 
 
 To run commands against the forked repos, set `GBM_WORDPRESS_ORG` and `GBM_WPMOBILE_ORG` as environment variables to user GitHub username. By default, these values with be WordPress and WordPress-Mobile, respectively.
@@ -25,6 +25,5 @@ To run commands against the forked repos, set `GBM_WORDPRESS_ORG` and `GBM_WPMOB
 Example command:
 
 ```
-GBM_WPMOBILE_ORG=yourusername GBM_WORDPRESS_ORG=yourusername go run main.go release prepare gb 1.109.0 
+GBM_WPMOBILE_ORG=yourusername GBM_WORDPRESS_ORG=yourusername go run main.go release prepare gb 1.109.0
 ```
-

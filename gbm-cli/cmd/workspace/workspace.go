@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"path"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
 )
 
 type Workspace interface {

@@ -2,7 +2,7 @@ package render
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
 )
 
 var AztecCmd = &cobra.Command{

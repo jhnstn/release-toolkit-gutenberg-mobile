@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/cmd/release"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/cmd/render"
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/cmd/release"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/cmd/render"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/console"
 )
 
 // rootCmd represents the base command when called without any subcommands

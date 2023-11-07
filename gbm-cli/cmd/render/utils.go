@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/render"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/render"
 )
 
 func renderAztecSteps(conditional bool) (string, error) {

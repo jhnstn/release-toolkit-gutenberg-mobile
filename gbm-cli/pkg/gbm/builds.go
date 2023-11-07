@@ -1,7 +1,7 @@
 package gbm
 
 import (
-	"github.com/wordpress-mobile/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
+	"github.com/jhnstn/release-toolkit-gutenberg-mobile/gbm-cli/pkg/gh"
 )
 
 func AndroidGbmBuildPublished(pr gh.PullRequest) (bool, error) {
