@@ -1,5 +1,10 @@
 package shell
 
+import (
+	"os"
+	"os/exec"
+)
+
 type NpmCmds interface {
 	Install(...string) error
 	Ci() error
@@ -10,6 +15,20 @@ type NpmCmds interface {
 }
 
 func (c *client) Ci() error {
+
+	// If NVM is installed, use it to install the correct version of node
+	// This should be added under a $CI flag or something. I'm just noticing
+	// that Github workflows are using a different process for each exec.Command
+	// So even though we switch to the correct version of node earlier on, when we call
+	// npm ci, it's using the default version of node.
+	if os.Getenv("NVM_DIR") != "" {
+		cmd := exec.Command("bash", "-l", "-c", "nvm use && npm ci")
+		cmd.Dir = c.dir
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		return cmd.Run()
+	}
+
 	return c.cmd("ci")
 }
 
