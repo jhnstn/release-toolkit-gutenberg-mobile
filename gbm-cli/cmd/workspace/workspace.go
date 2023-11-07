@@ -38,6 +38,10 @@ func NewWorkspace() (Workspace, error) {
 }
 
 func (w *workspace) create() error {
+
+	w.dir = "."
+	return nil
+	/*
 	// if we're disabled, don't create a temp directory
 	if w.disabled {
 		return nil
@@ -48,6 +52,7 @@ func (w *workspace) create() error {
 	}
 	w.dir = tempDir
 	return nil
+	*/
 }
 
 func (w *workspace) setCleaner() {
