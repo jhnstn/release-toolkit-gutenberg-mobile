@@ -35,7 +35,7 @@ func NewNpmCmd(cp CmdProps) NpmCmds {
 			ci := os.Getenv("CI")
 			if ci == "true" && os.Getenv("NVM_DIR") != "" {
 				strCmds := strings.Join(cmds, " ")
-				cmd = exec.Command("bash", ". $NVM_DIR/nvm.sh && nvm use && npm "+strCmds)
+				cmd = exec.Command("bash", "-l", "-c", ". $NVM_DIR/nvm.sh && nvm use && npm "+strCmds)
 			} else {
 				cmd = exec.Command("npm", cmds...)
 			}
