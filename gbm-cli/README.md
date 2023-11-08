@@ -38,13 +38,6 @@ Otherwise follow these steps:
 2. Export the token under the environment variable `GH_TOKEN`
 
 ## Development Environment
-<<<<<<< HEAD
-1. Download and install the [Go package](https://go.dev/doc/install).
-2. While not required, it is higly recommended to develop with [VSCode](https://code.visualstudio.com/) and install the [Go VSCode](https://marketplace.visualstudio.com/items?itemName=golang.go) extension.
-
-## Releasing
-For detailed instructions on running a release, visit [Releasing.md](https://github.com/jhnstn/release-toolkit-gutenberg-mobile/blob/cli/update-checklist/cli/Releasing.md).
-=======
 1. Download and install the [Go package](https://go.dev/doc/install). Check `go.mod` for the current version of go required (Note: anything below `v1.21` will not work)
 2. While not required, it is highly recommended to develop with [VSCode](https://code.visualstudio.com/) and install the [Go VSCode](https://marketplace.visualstudio.com/items?itemName=golang.go) extension.
 
@@ -60,7 +53,6 @@ When ready to push updates to a new `gbm-cli` version make sure to:
 - Create a `./bin` directory if you don't have one already
 - Run `go build -o ./bin/gbm-cli`
 - Add `./bin/gbm-cli` as an artifact to the Github release.
->>>>>>> 00011317a28ed15e24f6915ea4a0502aba88e25a
 
 ## Testing
 For detailed instructions on testing and configuring your development environment, visit [Testing.md](https://github.com/jhnstn/release-toolkit-gutenberg-mobile/blob/cli/update-checklist/cli/Testing.md).
