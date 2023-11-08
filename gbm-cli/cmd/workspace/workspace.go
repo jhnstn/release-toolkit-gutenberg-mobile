@@ -30,6 +30,13 @@ func NewWorkspace() (Workspace, error) {
 		console.Info("GBM_NO_WORKSPACE is set, not creating a workspace directory")
 		w.disabled = true
 	}
+
+	if ci, _ := os.LookupEnv("CI"); ci == "true" {
+		console.Info("CI environment detected, not creating a workspace directory")
+		w.disabled = true
+		w.dir = "."
+	}
+
 	if err := w.create(); err != nil {
 		return nil, err
 	}
@@ -39,9 +46,6 @@ func NewWorkspace() (Workspace, error) {
 
 func (w *workspace) create() error {
 
-	w.dir = "."
-	return nil
-	/*
 	// if we're disabled, don't create a temp directory
 	if w.disabled {
 		return nil
@@ -52,7 +56,6 @@ func (w *workspace) create() error {
 	}
 	w.dir = tempDir
 	return nil
-	*/
 }
 
 func (w *workspace) setCleaner() {
