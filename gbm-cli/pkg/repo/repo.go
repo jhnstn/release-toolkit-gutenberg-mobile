@@ -68,5 +68,11 @@ func GetRepoPath(repo string) string {
 
 func GetRepoHttpsPath(repo string) string {
 	org := GetOrg(repo)
+	token := os.Getenv("GITHUB_TOKEN")
+
+	if token != "" {
+		return fmt.Sprintf("https://%s@github.com/%s/%s", token, org, repo)
+	}
+
 	return fmt.Sprintf("https://github.com/%s/%s", org, repo)
 }
